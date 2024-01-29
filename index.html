@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp Convertor</title>
+    <link rel="shortcut icon" href="/img/logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+</head>
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">emp<span>Convertor</span></a>
+    </nav>
+
+    <!-- Calculate Section -->
+    <section class="calculate" id="calculate">
+        <div class="calculate-title-box">
+            <h3 class="title-calculate" id="text-gerak"></h3>
+        </div>
+        <div class="formbox">
+            <form class="calculator">
+                <div class="row50">
+                    <div class="input-box">
+                        <span>From</span>
+                        <input id="input1" type="number" placeholder="100"/>
+                    </div>    
+                    <div class="input-box">    
+                        <select id="select1" required>
+                            <option value="" disabled selected hidden>Please Choose</option>
+                            <option>°Reamur</option>
+                            <option>°Celcius</option>
+                            <option>°Fahrenheit</option>
+                            <option>°Kelvin</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row50">
+                    <div class="input-boxx">
+                        <span>To</span>
+                        <input id="input2" type="number" readonly>
+                    </div>
+                    <div class="input-boxx">
+                        <select id="select2" required>
+                            <option value="" disabled selected hidden>Please Choose</option>
+                            <option>°Reamur</option>
+                            <option>°Celcius</option>
+                            <option>°Fahrenheit</option>
+                            <option>°Kelvin</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="result-box">
+                    <button id="convertButton">Convert</button>
+                    <p id="convertedResult" class="converted-result"></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
